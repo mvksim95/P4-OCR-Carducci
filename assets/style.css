@@ -72,8 +72,13 @@ body {
 
 }
 #about-me {
-	flex: 2
+	flex: 2;
 }
+
+#about-me p {
+	width: 80%;
+}
+
 .about-me__title {
 	margin-top: 1em;
 	margin-bottom: 60px;
@@ -84,9 +89,10 @@ body {
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+	font-size: 16px;
 }
-#about-me p {
-	width: 80%;
+
+.about-me_text {
 	font-size: 14px;
 }
 
@@ -96,6 +102,7 @@ body {
 .title{
 	text-align: center;
 	padding-block: 2em;
+	font-size: 28px;
 }
 .gallery .nav {
 	justify-content: center;
@@ -152,6 +159,7 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
+	font-size: 38px;
 
 }
 .quote__author {
@@ -195,6 +203,10 @@ body {
 	z-index: 1;
 }
 
+.service-title {
+	font-size: 28px;
+}
+
 #contact {
 	margin: auto;
 	background-color: #D8D3A8 ;
@@ -206,6 +218,11 @@ body {
 #contact .container {
 	display: flex;
 }
+
+.contact-title {
+	font-size: 28px;
+}
+
 .picture.right::before {
 	content: ' ';
 	background-color: #BEB45A;
