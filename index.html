@@ -2,55 +2,69 @@
 <html lang="fr">
 
 <head>
-	<title>Nina Carducci | Photographe Freelance</title>
 	<meta charset="UTF-8">
+	<title>Nina Carducci | Photographe Freelance</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- ajout balises meta -->
 	<meta name="language" content="fr-FR">
 
-	<!-- balise meta opengraph -->
+	<!-- Meta description pour le SEO -->
+	<meta name="description"
+		content="Découvrez une galerie d'images captivantes mettant en lumière des concerts, mariages et autres aspects de la vie quotidienne. Parcourez mon portfolio pour avoir un aperçu de mon travail.">
+
+	<!-- Balises OpenGraph pour Facebook et Twitter Cards -->
 	<meta property="og:site_name" content="Nina Carducci">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="http://127.0.0.1:5500/index.html">
 	<meta property="og:title" content="Nina Carducci | Photographe Freelance">
 	<meta property="og:description"
-		content="Découvrez une galerie d'images captivantes mettant en lumière des concerts, mariages et autres aspects de la vie quotidienne. Parcourez mon portfolio pour avoir un apercu de mon travail">
+		content="Découvrez une galerie d'images captivantes mettant en lumière des concerts, mariages et autres aspects de la vie quotidienne.">
 	<meta property="og:image" content="./assets/images/nina.webp">
 
-	<!-- script pour les microdonnées -->
-	<script type="application/ld+json">
-		{
-		  "@context": "https://schema.org",
-		  "@type": "ProfessionalService",
-		  "name": "Nina Carducci",
-		  "image": "./assets/images/nina.webp",
-		  "url": "http://127.0.0.1:5500/index.html",
-		  "telephone": "05 56 67 78 89.",
-		  "priceRange": "50-400€",
-		  "address": {
-			"@type": "PostalAddress",
-			"streetAddress": "68 avenue Alsace-Lorraine",
-			"addressLocality": "bordeaux",
-			"postalCode": "33200",
-			"addressCountry": "FR"
-		  },
-		  "openingHoursSpecification": {
-			"@type": "OpeningHoursSpecification",
-			"dayOfWeek": [
-			  "Friday",
-			  "Thursday",
-			  "Wednesday",
-			  "Tuesday",
-			  "Monday"
-			],
-			"opens": "10:00",
-			"closes": "19:00"
-		  } 
-		}
-		</script>
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Nina Carducci - Photographe freelance">
+	<meta name="twitter:description"
+		content="Découvrez une galerie d'images captivantes mettant en lumière des concerts, mariages et autres moments de vie.">
+	<meta name="twitter:image" content="https://www.exemple.com/image.jpg">
 
-	<meta name="description"
-		content="Découvrez une galerie d'images captivantes mettant en lumière des concerts, mariages et autres aspects de la vie quotidienne. Parcourez mon portfolio pour avoir un apercu de mon travail">
+	<!-- Feuilles de style -->
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="./assets/css/css-min.css">
+
+	<!-- Préchargement des polices et de l'image en vue d'optimisation -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+		rel="stylesheet">
+	<link rel="preload" as="image" href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp">
+
+	<!-- Microdonnées Schema.org -->
+	<script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Nina Carducci",
+          "image": "./assets/images/nina.webp",
+          "url": "http://127.0.0.1:5500/index.html",
+          "telephone": "05 56 67 78 89",
+          "priceRange": "50-400€",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "68 avenue Alsace-Lorraine",
+            "addressLocality": "Bordeaux",
+            "postalCode": "33200",
+            "addressCountry": "FR"
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "10:00",
+            "closes": "19:00"
+          }
+        }
+    </script>
+
+	<!-- Balise link CSS / Scipt etc -->
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/css/css-min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -113,13 +127,13 @@
 							alt="des mariés qui s'embrassent au milieu de la foule">
 					</div>
 				</div>
-				<button class="carousel-control-prev" aria-label="image précédente" type="button" data-bs-target="#carouselExampleIndicators"
-					data-bs-slide="prev">
+				<button class="carousel-control-prev" aria-label="image précédente" type="button"
+					data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Previous</span>
 				</button>
-				<button class="carousel-control-next" aria-label="image suivante" type="button" data-bs-target="#carouselExampleIndicators"
-					data-bs-slide="next">
+				<button class="carousel-control-next" aria-label="image suivante" type="button"
+					data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Next</span>
 				</button>
@@ -230,7 +244,7 @@
 								travers un album photo personnalisé</p>
 						</div>
 						<div class="service__price">
-							<h5 class="service-title">400€ 	album A4</h5>
+							<h5 class="service-title">400€ album A4</h5>
 							<span>30 pages recto/verso</span>
 						</div>
 					</article>
